@@ -1,4 +1,14 @@
-/*.hero {
-  background-color: #68B738;
+.hero {
+  background-color: $basic-green;
+  color: #fff;
+  &__title {
+    font-weight: 400;
+    font-size: 36px;
+  }
+  &__slogan {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
 }
-*/
+
