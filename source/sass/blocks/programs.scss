@@ -1,0 +1,30 @@
+.programs__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.programs__item {
+  background-color: $basic-grey;
+}
+
+.programs__title {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+}
+
+.programs__description {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special_dark-grey;
+}
+
+.programs__link {
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}

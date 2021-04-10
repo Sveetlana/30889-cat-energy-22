@@ -1,36 +1,16 @@
 // Начните писать стили здесь
-@font-face {
-  font-family: "Oswald Medium";
-  src: url("../fonts/oswaldmedium.woff") format("woff"),
-    url("../fonts/oswaldmedium.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Oswald Regular";
-  src: url("../fonts/oswaldregular.woff") format("woff"),
-    url("../fonts/oswaldregular.woff2") format("woff2");
-}
-
-$basic_green:#68b738;
-$basic_grey:#f2f2f2;
-$special_grey:#cdcdcd;
-$special_grey2:#666666;
-$special_dark-grey:#444444;
-$special_dark-grey-2:#222222;
-
-@import "normalize";
-@import "page";
-@import "button";
+@import "global/variables";
+@import "vendor/normalize";
+@import "global/fonts";
+@import "global/global";
+@import "blocks/page";
+@import "blocks/button";
 //@import "page-header";
-@import "main-nav";
-@import "hero";
-@import "programs";
-@import "steps";
-@import "example";
-@import "map";
-@import "page-footer";
-@import "copyright";
-
-.visually-hidden {
-  display: none;
-}
+@import "blocks/main-nav";
+@import "blocks/hero";
+@import "blocks/programs";
+@import "blocks/steps";
+@import "blocks/example";
+@import "blocks/map";
+@import "blocks/page-footer";
+@import "blocks/copyright";
