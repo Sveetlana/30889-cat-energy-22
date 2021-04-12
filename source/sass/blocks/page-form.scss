@@ -1,0 +1,46 @@
+.page-form__title {
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.page-form__subtitle {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.page-title__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.page-form__label,
+.page-form__input {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special_dark-grey;
+  text-transform: uppercase;
+}
+
+.page-form__label--extra {
+  color: #000000;
+}
+
+.page-form__input {
+  border: 1px solid $special_light-grey;
+}
+
+.page-form__button {
+  border: none;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.page-form__note {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
