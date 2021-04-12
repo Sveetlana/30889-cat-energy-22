@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Cat Energy</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
   <header class="page-header">
@@ -18,56 +19,55 @@
         <ul class="main-nav__list">
           <li class="main-nav__item"><a href="index.html">Главная</a></li>
           <li class="main-nav__item"><a href="catalog.html">Каталог продукции</a></li>
-          <li class="main-nav__item--current"><a>Подбор программы</a></li>
+          <li class="main-nav__item main-nav__item--current"><a>Подбор программы</a></li>
         </ul>
       </div>
     </nav>
   </header>
   <main class="page-main">
-    <h1>Подбор программы</h1>
-    <p>Заполните анкету, и мы подберем
-      программу питания для вашего кота</p>
     <form action="https://echo.htmlacademy.ru" class="page-form" method ="post">
       <div class="page-form__container">
-        <label for="cat-name">Имя*</label>
-        <input type="text" id="cat-name" value="">
-        <label for="cat-weight">Вес (кг)</label>
-        <input type="text" id="cat-weight" value="">
-        <label for="cat-age">Возраст (лет)</label>
-        <input type="text" id="cat-age" value="">
+        <h1 class="page-form__title">Подбор программы</h1>
+        <p class="page-form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <label class="page-form__label" for="cat-name">Имя*</label>
+        <input class="page-form__input" type="text" id="cat-name" value="">
+        <label class="page-form__label" for="cat-weight">Вес (кг)*</label>
+        <input class="page-form__input" type="text" id="cat-weight" value="">
+        <label class="page-form__label" for="cat-age">Возраст (лет)</label>
+        <input class="page-form__input" type="text" id="cat-age" value="">
       </div>
       <div class="page-form__container">
-        <input type="radio" value="1" name="program" checked><label>Похудение</label>
-        <input type="radio" value="2" name="program"><label>Набор массы</label>
-        <input type="radio" value="3" name="program"><label>Не знаю (нужен совет)</label>
+        <input class="page-form__input" type="radio" value="1" name="program" checked><label class="page-form__label">Похудение</label>
+        <input class="page-form__input" type="radio" value="2" name="program"><label class="page-form__label">Набор массы</label>
+        <input class="page-form__input" type="radio" value="3" name="program"><label class="page-form__label">Не знаю (нужен совет)</label>
       </div>
       <div class="page-form__delimiter">
-        <h2>Контактные данные (владельца кота)</h2>
+        <h2 class="page-form__subtitle">Контактные данные (владельца кота)</h2>
       </div>
       <div class="page-form__container">
-        <label for="cat-mail">E-mail*</label>
-        <input type="email" id="cat-mail" value="">
-        <label for="cat-phone">Телефон*</label>
-        <input type="phone" id="cat-phone" value="">
+        <label class="page-form__label" for="cat-mail">E-mail*</label>
+        <input class="page-form__input" type="email" id="cat-mail" value="">
+        <label class="page-form__label" for="cat-phone">Телефон*</label>
+        <input class="page-form__input" type="phone" id="cat-phone" value="">
       </div>
       <div class="page-form__delimiter">
-        <h2>Комментарий</h2>
+        <h2 class="page-form__subtitle">Комментарий</h2>
       </div>
       <div class="page-form__container">
-        <textarea name="comment" id="cat-comment" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
+        <textarea class="page-form__input page-form__label" name="comment" id="cat-comment" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
       </div>
       <div class="page-form__delimiter">
-        <h2>Дополнительно</h2>
+        <h2 class="page-form__subtitle">Дополнительно</h2>
       </div>
       <div class="page-form__container">
-        <input type="checkbox" id="extra1" value="e1" checked><label for="extra1">Сахарозаменитель</label>
-        <input type="checkbox" id="extra2" value="e2"><label for="extra2">Питьевая вода</label>
-        <input type="checkbox" id="extra3" value="e3"><label for="extra3">Молоко</label>
-        <input type="checkbox" id="extra4" value="e4"><label for="extra4">Витамины</label>
+        <input class="page-form__input" type="checkbox" id="extra1" value="e1" checked><label class="page-form__label page-form__label--extra" for="extra1">Сахарозаменитель</label>
+        <input class="page-form__input" type="checkbox" id="extra2" value="e2"><label class="page-form__label page-form__label--extra" for="extra2">Питьевая вода</label>
+        <input class="page-form__input" type="checkbox" id="extra3" value="e3"><label class="page-form__label page-form__label--extra" for="extra3">Молоко</label>
+        <input class="page-form__input" type="checkbox" id="extra4" value="e4"><label class="page-form__label page-form__label--extra" for="extra4">Витамины</label>
       </div>
       <div class="page-form__container">
-        <input type="submit" value="Отправить заявку" class="form__button button">
-        <small>*-Обязательные поля</small>
+        <input class="page-form__button button" type="submit" value="Отправить заявку">
+        <small class="page-form__note">*-Обязательные поля</small>
       </div>
     </form>
     <section class="map">
