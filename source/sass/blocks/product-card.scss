@@ -1,0 +1,31 @@
+.product-card__name {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $special_dark-grey-2;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.product-card__info {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $special_dark-grey;
+}
+
+.product-card__text {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.product-card__note {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $special_dark-grey;
+}
