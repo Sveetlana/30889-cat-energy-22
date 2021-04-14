@@ -1,3 +1,15 @@
+.example {
+  background-color: $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+  }
+}
+
+.example__photo {
+  background-color: $basic-grey;
+}
+
 .example__title {
   font-weight: 400;
   font-size: 36px;

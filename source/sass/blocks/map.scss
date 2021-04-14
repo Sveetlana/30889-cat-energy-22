@@ -11,4 +11,15 @@
   font-size: 14px;
   line-height: 20px;
   color: $special_dark-grey;
+  text-align: right;
+}
+
+.map__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 570px;
+  }
 }

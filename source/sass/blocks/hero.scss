@@ -1,6 +1,10 @@
 .hero {
   background-color: $basic-green;
   color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+  }
 }
 
 .hero__title {

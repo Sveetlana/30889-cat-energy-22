@@ -13,4 +13,20 @@
   font-size: 14px;
   line-height: 18px;
   color: $special_dark-grey;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.steps__item {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+    min-height: 280px;
+  }
 }
