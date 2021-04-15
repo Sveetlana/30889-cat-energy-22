@@ -1,9 +1,10 @@
 .hero {
-  background-color: $basic-green;
   color: #ffffff;
+  background-color: $basic-green;
 
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
+    color: #000000;
   }
 }
 
@@ -16,4 +17,17 @@
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 400;
+}
+
+.hero__container {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 630px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }

@@ -15,11 +15,24 @@
 }
 
 .map__container {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 630px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
+.map__text {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     width: 570px;
   }
 }

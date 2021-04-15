@@ -6,6 +6,19 @@
   }
 }
 
+.example__container {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 630px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
 .example__photo {
   background-color: $basic-grey;
 }
@@ -41,4 +54,22 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.example__results {
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 50% 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 500px;
+    grid-template-columns: 100%;
+  }
+}
+
+.example__results-data {
+  display: grid;
+  grid-template-columns: 50% 50%;
 }

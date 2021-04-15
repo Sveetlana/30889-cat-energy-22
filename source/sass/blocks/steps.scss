@@ -13,20 +13,26 @@
   font-size: 14px;
   line-height: 18px;
   color: $special_dark-grey;
-  display: flex;
-  flex-direction: column;
+  display: grid;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
-    flex-wrap: wrap;
+    grid-template-columns: 50% 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 25% 25% 25% 25%;
   }
 }
 
-.steps__item {
-  display: block;
+.steps__container {
+  width: 280px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 250px;
-    min-height: 280px;
+    width: 630px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
   }
 }

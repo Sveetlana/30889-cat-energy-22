@@ -2,13 +2,14 @@
 <html class="page" lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cat Energy</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
   <header class="page-header">
-    <div class="page-header__container">
-      <div class="page-header__top">
+    <div class="page-header__top">
+      <div class="page-header__container">
         <a class="page-header__logo logo">
           <img src="img/logo-mobile.svg" alt="Cat Energy" width="34" height="38">
           <svg width="128" height="24" viewBox="0 0 128 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -42,13 +43,16 @@
             </ul>
           </div>
         </nav>
+      </div>
     </div>
       <section class="hero">
         <div class="hero__container">
-          <h1 class="hero__title">Функциональное питание для котов</h1>
-          <p class="hero__slogan">Занялся собой? Займись котом!</p>
+          <div class="hero__text">
+            <h1 class="hero__title">Функциональное питание для котов</h1>
+            <p class="hero__slogan">Занялся собой? Займись котом!</p>
+            <a href="form.html" class="hero__button button">Подобрать программу</a>
+          </div>
           <img src="img/index-can-mobile 1.png" alt="Cat Energy" class="hero__img" width="280" height="270">
-          <a href="form.html" class="hero__button button">Подобрать программу</a>
         </div>
       </section>
     </div>
@@ -94,9 +98,19 @@
       <div class="example__container">
         <h2 class="example__title">Живой пример</h2>
         <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-        <div class="example__result"><span class="example__result-big">5 кг</span><span class="example__result-small">снижение веса</span></div>
-        <div class="example__result"><span class="example__result-big">60 дней</span><span class="example__result-small">потрачено времени</span></div>
-        <p class="example__bill">Затраты на питание:<span>15000 руб.</span></p>
+          <div class="example__results">
+            <div class="example__results-data">
+              <div class="example__result">
+                <span class="example__result-big">5 кг</span>
+                <span class="example__result-small">снижение веса</span>
+              </div>
+              <div class="example__result">
+                <span class="example__result-big">60 дней</span>
+                <span class="example__result-small">потрачено времени</span>
+              </div>
+            </div>
+            <p class="example__bill">Затраты на питание:<span class="example__bill-count">15000 руб.</span></p>
+          </div>
         <div class="example__photo">
           <div class="example__before">
             <img src="img/before-mobile 1.png" alt="фото до" width="311" height="232">
@@ -114,8 +128,10 @@
     </section>
     <section class="map">
       <div class="map__container">
-        <p class="map__title">Приглашаем<br>к сотрудничеству<br>дилеров!</p>
-        <p class="map__address">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</p>
+        <div class="map__text">
+          <p class="map__title">Приглашаем<br>к сотрудничеству<br>дилеров!</p>
+          <p class="map__address">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</p>
+        </div>
       </div>
       <div class="map__location"></div>
     </section>
