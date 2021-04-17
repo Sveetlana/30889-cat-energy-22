@@ -1,3 +1,42 @@
+.example {
+  background-color: $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+  }
+}
+
+.example__container {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 630px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
+.example__text-wrapper,
+.example__photo-wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 630px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.example__photo {
+  background-color: $basic-grey;
+}
+
 .example__title {
   font-weight: 400;
   font-size: 36px;
@@ -29,4 +68,37 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.example__results {
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 50% 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 500px;
+    grid-template-columns: 100%;
+  }
+}
+
+.example__results-data {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.example__content {
+  @media (min-width: $desktop-width) {
+    background-color: $basic-grey;
+  }
+}
+
+.example__content-wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: 1220px;
+    margin: 0 auto;
+  }
 }

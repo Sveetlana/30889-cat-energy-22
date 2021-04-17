@@ -11,4 +11,36 @@
   font-size: 14px;
   line-height: 20px;
   color: $special_dark-grey;
+  text-align: right;
+}
+
+.map__container {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 630px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
+.map__text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
+}
+
+.map__location {
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
