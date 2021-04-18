@@ -27,6 +27,14 @@
   }
 }
 
+.map__wrapper {
+  background-color: $basic-grey;
+
+  @media (min-width: $desktop-width) {
+    background-color: #ffffff;
+  }
+}
+
 .map__text {
   display: flex;
   flex-direction: row;
@@ -34,6 +42,7 @@
 
   @media (min-width: $desktop-width) {
     width: 570px;
+    background-color: #ffffff;
   }
 }
 
