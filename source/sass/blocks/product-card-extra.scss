@@ -1,8 +1,29 @@
+.product-card-extra {
+  display: grid;
+  //grid-template-rows: 1fr 1fr 1fr;
+  //grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 .product-card-extra__name {
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
   color: $special_dark-grey-2;
+
+  //grid-column-start: span 2;
+}
+
+.product-card-extra__link {
+  //grid-column-start: span 2;
+
+  @media (min-width: $tablet-width) {
+    grid-column-start: span 3;
+  }
 }
 
 .product-card-extra__weight,
@@ -11,4 +32,8 @@
   font-size: 14px;
   font-weight: 400;
   color: $special_dark-grey;
+}
+
+.product-card-extra__price {
+  text-align: right;
 }
