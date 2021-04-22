@@ -11,8 +11,8 @@
     <div class="page-header__top">
       <div class="page-header__container">
         <a class="page-header__logo logo">
-          <img src="img/logo-mobile.svg" alt="Cat Energy" width="34" height="38">
-          <svg width="128" height="24" viewBox="0 0 128 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <img class="logo__icon" src="img/logo-mobile.svg" alt="Cat Energy" width="34" height="38">
+          <svg class="logo__text" width="128" height="24" viewBox="0 0 128 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0)">
             <path d="M1.60253 22.0513C0.468358 20.3682 -0.0946573 18.3503 3.016e-05 16.3077V7.79487C-0.137317 5.73031 0.390444 3.67661 1.50238 1.94872C2.6041 0.615385 4.30676 0 6.81067 0C9.31458 0 10.9171 0.615385 11.9187 1.74359C13.006 3.17255 13.5409 4.96181 13.421 6.76923V8.82051H8.51333V6.46154C8.55297 5.76385 8.45065 5.06533 8.21286 4.41026C8.08576 4.14583 7.88431 3.9264 7.63443 3.78018C7.38455 3.63395 7.09766 3.56763 6.81067 3.58974C6.10958 3.58974 5.60879 3.79487 5.40848 4.30769C5.18191 5.03643 5.08025 5.79984 5.10801 6.5641V17.5385C5.05512 18.2799 5.19327 19.0227 5.50864 19.6923C5.70895 20.2051 6.20973 20.4103 6.91083 20.4103C7.61192 20.4103 8.01255 20.2051 8.21286 19.6923C8.44058 18.9992 8.54242 18.2692 8.51333 17.5385V15.0769H13.421V17.1282C13.5229 18.9651 12.9911 20.7803 11.9187 22.2564C10.9171 23.4872 9.21443 24.1026 6.81067 24.1026C4.40692 24 2.6041 23.3846 1.60253 22.0513Z" fill="#111111"/>
             <path d="M19.3302 0.307617H25.0391L29.2457 23.6922H24.6385L23.8372 18.7692H20.5321L19.7308 23.6922H15.0235L19.3302 0.307617ZM23.4366 15.6922L22.2347 6.56403L21.0329 15.6922H23.4366Z" fill="#111111"/>
@@ -31,28 +31,28 @@
             </defs>
           </svg>
         </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <div class="main-nav__container">
-            <ul class="main-nav__list">
-              <li class="main-nav__item--current"><a class="main-nav__link">Главная</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог продукции</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="form.html">Подбор программы</a></li>
-            </ul>
-          </div>
-        </nav>
       </div>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__container">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--current"><a class="main-nav__link">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог продукции</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Подбор программы</a></li>
+          </ul>
+        </div>
+      </nav>
     </div>
       <section class="hero">
         <div class="hero__container">
           <div class="hero__text">
             <h1 class="hero__title">Функциональное питание для котов</h1>
             <p class="hero__slogan">Занялся собой? Займись котом!</p>
-            <a href="form.html" class="hero__button button">Подобрать программу</a>
           </div>
           <img src="img/index-can-mobile 1.png" alt="Cat Energy" class="hero__img" width="280" height="270">
+          <a href="form.html" class="hero__button button">Подобрать программу</a>
         </div>
       </section>
     </div>
@@ -199,5 +199,21 @@
       </div>
     </div>
   </footer>
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
 </body>
 </html>

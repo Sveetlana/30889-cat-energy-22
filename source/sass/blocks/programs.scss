@@ -1,3 +1,9 @@
+.programs {
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+}
+
 .programs__list {
   list-style: none;
   padding: 0;
@@ -12,6 +18,8 @@
 
 .programs__item {
   background-color: $basic-grey;
+  padding: 20px;
+  margin-top: 20px;
 }
 
 .programs__title {
@@ -19,6 +27,8 @@
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
+  margin: 0;
+  padding: 10px 0;
 }
 
 .programs__description {
@@ -27,6 +37,9 @@
   font-size: 14px;
   line-height: 18px;
   color: $special_dark-grey;
+  margin: 0 0 20px 0;
+  padding: 15px 0;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .programs__link {
@@ -40,7 +53,7 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 630px;
+    width: 708px;
   }
 
   @media (min-width: $desktop-width) {

@@ -4,6 +4,14 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    margin: 0 auto;
+    width: 708px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
   }
 }
 
@@ -14,12 +22,12 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 630px;
+    width: 175px;
+    margin: 0;
   }
 
-  @media (min-width: $desktop-width) {
-    width: 1220px;
-  }
+  /* @media (min-width: $desktop-width) {
+  } */
 }
 
 .page-header__logo {

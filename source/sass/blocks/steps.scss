@@ -1,7 +1,13 @@
+.steps {
+  padding-bottom: 42px;
+}
+
 .steps__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+  margin: 0;
+  padding: 27px 0 38px 0;
 }
 
 .steps__list {
@@ -14,13 +20,14 @@
   line-height: 18px;
   color: $special_dark-grey;
   display: grid;
+  grid-gap: 20px;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -29,10 +36,15 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 630px;
+    width: 708px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
   }
+}
+
+.steps__descriptions {
+  margin: 0;
+  padding-left: 80px;
 }

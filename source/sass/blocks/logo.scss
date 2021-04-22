@@ -1,3 +1,13 @@
 .logo {
   text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.logo__icon {
+  margin-right: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 12px;
+  }
 }
