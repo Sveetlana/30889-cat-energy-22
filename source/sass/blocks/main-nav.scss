@@ -9,6 +9,7 @@
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
+    z-index: 2;
   }
 }
 
@@ -38,7 +39,7 @@
     margin-right: 2em;
     height: 42px;
 
-    &:last-child{
+    &:last-child {
       margin-right: 0;
     }
   }
@@ -46,6 +47,10 @@
   &--current {
     @media (min-width: $tablet-width) {
       border-bottom: 2px solid $basic-green;
+    }
+
+    @media (min-width: $tablet-width) {
+      border-bottom-color: #ffffff;
     }
   }
 }
@@ -56,7 +61,7 @@
   color: #000000;
 
   @media (min-width: $desktop-width) {
-    //color: #ffffff;
+    color: #ffffff;
   }
 }
 
@@ -114,6 +119,7 @@
   .main-nav--closed .main-nav__list {
     display: none;
   }
+
   .main-nav__item:first-child {
     border-top: 1px solid $special_light-grey;
   }

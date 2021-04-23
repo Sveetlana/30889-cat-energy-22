@@ -24,6 +24,9 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -46,5 +49,81 @@
 
 .steps__descriptions {
   margin: 0;
+}
+
+.steps__item {
+  position: relative;
+  box-sizing: border-box;
   padding-left: 80px;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+    height: 280px;
+    //outline: 1px dotted red;
+    box-sizing: border-box;
+    padding-left: 0;
+    padding-top: 140px;
+  }
+}
+
+.steps__item::before {
+  content: "";
+  background-size: cover;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: 40px;
+  }
+}
+
+.steps__item--consist::before {
+  background-image: url("../../img/icon-leafe.svg");
+}
+
+.steps__item--form::before {
+  background-image: url("../../img/icon-powder.svg");
+}
+
+.steps__item--change::before {
+  background-image: url("../../img/icon-fork.svg");
+}
+
+.steps__item--time::before {
+  background-image: url("../../img/icon-clock.svg");
+}
+
+@media (min-width: $tablet-width) {
+  .steps__item::after {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    color: $basic-grey;
+    font-size: 280px;
+    line-height: 280px;
+    z-index: -1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  .steps__item--consist::after {
+    content: "1";
+  }
+
+  .steps__item--form::after {
+    content: "2";
+  }
+
+  .steps__item--change::after {
+    content: "3";
+  }
+
+  .steps__item--time::after {
+    content: "4";
+  }
 }
