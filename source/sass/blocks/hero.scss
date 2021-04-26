@@ -86,17 +86,22 @@
     font-size: 20px;
     padding: 17px;
     display: inline-block;
+    z-index: 2;
+    position: relative;
   }
 }
 
 .hero__img {
   @media (min-width: $tablet-width) {
     position: absolute;
-    right: 0;
+    left: -90px;
+    z-index: 1;
   }
 
   @media (min-width: $desktop-width) {
+    position: absolute;
     z-index: 2;
-    right: 400px;
+    left: 450px;
+    top: 30px;
   }
 }
