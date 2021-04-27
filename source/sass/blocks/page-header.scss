@@ -44,7 +44,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-header::before {
+  .page-header--index::before {
     content: "";
     background-color: #3e3e42;
     background-image: url("../../img/bg-desktop.png");
@@ -57,7 +57,7 @@
     z-index: 1;
   }
 
-  .page-header::after {
+  .page-header--index::after {
     display: block;
     content: "";
     z-index: 1;
