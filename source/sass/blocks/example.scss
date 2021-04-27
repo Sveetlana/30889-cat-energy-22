@@ -11,7 +11,7 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 630px;
+    width: 708px;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,7 +25,7 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 630px;
+    width: 708px;
   }
 
   @media (min-width: $desktop-width) {
@@ -41,6 +41,8 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+  margin: 0;
+  padding: 27px 0 33px 0;
 }
 
 .example__description {

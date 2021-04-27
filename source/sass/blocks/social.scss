@@ -4,4 +4,9 @@
   margin: 0;
   display: flex;
   flex-direction: row;
+  align-items: center;
+}
+
+.social__item {
+  margin: 0 0.5em;
 }
