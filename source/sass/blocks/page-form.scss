@@ -64,11 +64,33 @@
 }
 
 .page-form__checkbox {
-  margin-right: 10px;
+  display: none;
+}
+
+.page-form__checkbox + .page-form__label {
+  display: flex;
+  align-items: center;
+}
+
+.page-form__checkbox + .page-form__label::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  border: 1px solid $special_grey;
+  margin-right: 1em;
 
   @media (min-width: $tablet-width) {
-    margin-right: 15px;
+    width: 40px;
+    height: 40px;
   }
+}
+
+.page-form__checkbox:checked + .page-form__label::before {
+  background-image: url("../../img/icon-check.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .page-form__input {
