@@ -104,6 +104,17 @@
   @media (min-width: $tablet-width) {
     height: 52px;
   }
+
+  &:hover {
+    border-color: $special_grey;
+  }
+
+  &:focus {
+    border: 2px solid $special_dark-grey;
+    border-radius: 0;
+    outline: none;
+    padding: 0 calc(1em - 1px);
+  }
 }
 
 .page-form__textarea {
@@ -114,6 +125,10 @@
 
   @media (min-width: $desktop-width) {
     min-height: 174px;
+  }
+
+  &:focus {
+    padding: calc(0.6em - 1px) calc(1em - 1px);
   }
 }
 
