@@ -10,9 +10,13 @@
   <header class="page-header">
     <div class="page-header__top">
       <div class="page-header__container">
-        <a class="page-header__logo logo" href="index.html">
-          <img src="img/logo-mobile.svg" alt="Cat Energy" width="34" height="38">
-          <svg width="128" height="24" viewBox="0 0 128 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <a class="page-header__logo logo">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="logo__icon" src="img/logo-mobile.svg" alt="Cat Energy" width="34" height="38">
+          </picture>
+          <svg class="logo__text" width="128" height="24" viewBox="0 0 128 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0)">
             <path d="M1.60253 22.0513C0.468358 20.3682 -0.0946573 18.3503 3.016e-05 16.3077V7.79487C-0.137317 5.73031 0.390444 3.67661 1.50238 1.94872C2.6041 0.615385 4.30676 0 6.81067 0C9.31458 0 10.9171 0.615385 11.9187 1.74359C13.006 3.17255 13.5409 4.96181 13.421 6.76923V8.82051H8.51333V6.46154C8.55297 5.76385 8.45065 5.06533 8.21286 4.41026C8.08576 4.14583 7.88431 3.9264 7.63443 3.78018C7.38455 3.63395 7.09766 3.56763 6.81067 3.58974C6.10958 3.58974 5.60879 3.79487 5.40848 4.30769C5.18191 5.03643 5.08025 5.79984 5.10801 6.5641V17.5385C5.05512 18.2799 5.19327 19.0227 5.50864 19.6923C5.70895 20.2051 6.20973 20.4103 6.91083 20.4103C7.61192 20.4103 8.01255 20.2051 8.21286 19.6923C8.44058 18.9992 8.54242 18.2692 8.51333 17.5385V15.0769H13.421V17.1282C13.5229 18.9651 12.9911 20.7803 11.9187 22.2564C10.9171 23.4872 9.21443 24.1026 6.81067 24.1026C4.40692 24 2.6041 23.3846 1.60253 22.0513Z" fill="#111111"/>
             <path d="M19.3302 0.307617H25.0391L29.2457 23.6922H24.6385L23.8372 18.7692H20.5321L19.7308 23.6922H15.0235L19.3302 0.307617ZM23.4366 15.6922L22.2347 6.56403L21.0329 15.6922H23.4366Z" fill="#111111"/>
@@ -31,98 +35,108 @@
             </defs>
           </svg>
         </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <div class="main-nav__container">
-            <ul class="main-nav__list">
-              <li class="main-nav__item"><a class="main-nav__link">Главная</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог продукции</a></li>
-              <li class="main-nav__item main-nav__item--current"><a class="main-nav__link" href="form.html">Подбор программы</a></li>
-            </ul>
-          </div>
-        </nav>
       </div>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__container">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог продукции</a></li>
+            <li class="main-nav__item main-nav__item--current"><a class="main-nav__link">Подбор программы</a></li>
+          </ul>
+        </div>
+      </nav>
     </div>
   </header>
   <main class="page-main">
     <form action="https://echo.htmlacademy.ru" class="page-form" method ="post">
       <div class="page-form__container">
         <h1 class="page-form__title">Подбор программы</h1>
-        <p class="page-form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-        <div class="page-form__customer">
+        <p class="page-form__text">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
+      </div>
+      <div class="page-form__customer">
+        <div class="page-form__customer-info-inner">
           <div class="page-form__customer-info">
             <div class="page-form__row">
-              <label class="page-form__label" for="cat-name">Имя*</label>
-              <input class="page-form__input" type="text" id="cat-name" value="">
+              <label class="page-form__label" for="cat-name">Имя:*</label>
+              <input class="page-form__input" type="text" id="cat-name" value=""  placeholder="Барсик">
             </div>
             <div class="page-form__row">
-              <label class="page-form__label" for="cat-weight">Вес (кг)*</label>
-              <input class="page-form__input" type="text" id="cat-weight" value="">
+              <label class="page-form__label" for="cat-weight">Вес (кг):*</label>
+              <input class="page-form__input" type="text" id="cat-weight" value=""  placeholder="7">
             </div>
             <div class="page-form__row">
-              <label class="page-form__label" for="cat-age">Возраст (лет)</label>
-              <input class="page-form__input" type="text" id="cat-age" value="">
+              <label class="page-form__label" for="cat-age">Возраст (лет):</label>
+              <input class="page-form__input" type="text" id="cat-age" value=""  placeholder="7">
             </div>
           </div>
+        </div>
+        <div class="page-form__customer-goal-inner">
           <div class="page-form__customer-goal">
             <div class="page-form__row">
-              <input class="page-form__input" type="radio" value="1" name="program" checked>
-              <label class="page-form__label">Похудение</label>
+              <input class="page-form__radio" type="radio" value="1" name="program" id="program1" checked>
+              <label class="page-form__label" for="program1">Похудение</label>
             </div>
             <div class="page-form__row">
-              <input class="page-form__input" type="radio" value="2" name="program">
-              <label class="page-form__label">Набор массы</label>
+              <input class="page-form__radio" type="radio" value="2" name="program" id="program2">
+              <label class="page-form__label" for="program2">Набор массы</label>
             </div>
             <div class="page-form__row">
-              <input class="page-form__input" type="radio" value="3" name="program">
-              <label class="page-form__label">Не знаю (нужен совет)</label>
+              <input class="page-form__radio" type="radio" value="3" name="program" id="program3">
+              <label class="page-form__label" for="program3">Не знаю (нужен совет)</label>
             </div>
           </div>
         </div>
       </div>
       <div class="page-form__delimiter">
-        <h2 class="page-form__subtitle">Контактные данные (владельца кота)</h2>
+        <div class="page-form__container">
+          <h2 class="page-form__subtitle">Контактные данные (владельца кота)</h2>
+        </div>
       </div>
       <div class="page-form__container page-form__customer-contacts">
         <div class="page-form__row">
-          <label class="page-form__label" for="cat-mail">E-mail*</label>
-          <input class="page-form__input" type="email" id="cat-mail" value="">
+          <label class="page-form__label" for="cat-mail">E-mail:*</label>
+          <input class="page-form__input" type="email" id="cat-mail" value="" placeholder="kuklachev@gmail.com">
         </div>
         <div class="page-form__row">
-          <label class="page-form__label" for="cat-phone">Телефон*</label>
-          <input class="page-form__input" type="phone" id="cat-phone" value="">
+          <label class="page-form__label" for="cat-phone">Телефон:*</label>
+          <input class="page-form__input" type="phone" id="cat-phone" value="" placeholder="8 (960) 900-60-90">
         </div>
       </div>
       <div class="page-form__delimiter">
-        <h2 class="page-form__subtitle">Комментарий</h2>
+        <div class="page-form__container">
+          <h2 class="page-form__subtitle">Комментарий</h2>
+        </div>
       </div>
       <div class="page-form__container">
-        <textarea class="page-form__input page-form__label" name="comment" id="cat-comment" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
+        <textarea class="page-form__input page-form__label page-form__textarea" name="comment" id="cat-comment" placeholder="Расскажите обо всех повадках кота"></textarea>
       </div>
       <div class="page-form__delimiter">
-        <h2 class="page-form__subtitle">Дополнительно</h2>
+        <div class="page-form__container">
+          <h2 class="page-form__subtitle">Дополнительно</h2>
+        </div>
       </div>
       <div class="page-form__container page-form__customer-extra">
         <div class="page-form__row">
-          <input class="page-form__input" type="checkbox" id="extra1" value="e1" checked>
+          <input class="page-form__checkbox" type="checkbox" id="extra1" value="e1" checked>
           <label class="page-form__label page-form__label--extra" for="extra1">Сахарозаменитель</label>
         </div>
         <div class="page-form__row">
-          <input class="page-form__input" type="checkbox" id="extra2" value="e2">
+          <input class="page-form__checkbox" type="checkbox" id="extra2" value="e2">
           <label class="page-form__label page-form__label--extra" for="extra2">Питьевая вода</label>
         </div>
         <div class="page-form__row">
-          <input class="page-form__input" type="checkbox" id="extra3" value="e3">
+          <input class="page-form__checkbox" type="checkbox" id="extra3" value="e3">
           <label class="page-form__label page-form__label--extra" for="extra3">Молоко</label>
         </div>
         <div class="page-form__row">
-          <input class="page-form__input" type="checkbox" id="extra4" value="e4">
+          <input class="page-form__checkbox" type="checkbox" id="extra4" value="e4">
           <label class="page-form__label page-form__label--extra" for="extra4">Витамины</label>
         </div>
       </div>
-      <div class="page-form__container">
+      <div class="page-form__container page-form__submit">
         <input class="page-form__button button" type="submit" value="Отправить заявку">
         <small class="page-form__note">*-Обязательные поля</small>
       </div>
@@ -170,27 +184,43 @@
             <span class="visually-hidden">Мы ВКонтакте</span>
           </a></li>
           <li class="social__item"><a href="" class="social__link social__link--fb">
-            <svg width="28" height="33" viewBox="0 0 28 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M21 2.75H17.5C15.9529 2.75 14.4692 3.46024 13.3752 4.72447C12.2813 5.98871 11.6667 7.70337 11.6667 9.49127V13.536H8.16669V18.929H11.6667V29.7151H16.3334V18.929H19.8334L21 13.536H16.3334V9.49127C16.3334 9.13369 16.4563 8.79076 16.6751 8.53791C16.8939 8.28506 17.1906 8.14302 17.5 8.14302H21V2.75Z" stroke="#666666" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span class="visually-hidden">Мы в Фейсбуке</span>
-          </a></li>
-          <li class="social__item"><a href="" class="social__link social__link--inst">
             <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M11.4775 0.0898438C13.3942 0.0898438 14.959 0.112305 16.1719 0.157227C17.2051 0.202148 18.126 0.381836 18.9346 0.696289C19.7132 0.995768 20.387 1.43001 20.9561 1.99902C21.5251 2.56803 21.9593 3.24186 22.2588 4.02051C22.5732 4.8291 22.7529 5.75 22.7979 6.7832C22.8428 7.99609 22.8652 9.56087 22.8652 11.4775C22.8652 13.3942 22.8428 14.959 22.7979 16.1719C22.7529 17.2051 22.5732 18.126 22.2588 18.9346C21.9593 19.7132 21.5251 20.387 20.9561 20.9561C20.387 21.5251 19.7132 21.9593 18.9346 22.2588C18.126 22.5732 17.2051 22.7529 16.1719 22.7978C14.959 22.8428 13.3942 22.8652 11.4775 22.8652C9.56087 22.8652 7.99609 22.8428 6.7832 22.7978C5.75 22.7529 4.8291 22.5732 4.02051 22.2588C3.24186 21.9593 2.56803 21.5251 1.99902 20.9561C1.43001 20.387 0.995768 19.7132 0.696289 18.9346C0.381836 18.126 0.202148 17.2051 0.157227 16.1719C0.112305 14.959 0.0898438 13.3942 0.0898438 11.4775C0.0898438 9.56087 0.112305 7.99609 0.157227 6.7832C0.202148 5.75 0.381836 4.8291 0.696289 4.02051C0.995768 3.24186 1.43001 2.56803 1.99902 1.99902C2.56803 1.43001 3.24186 0.995768 4.02051 0.696289C4.8291 0.381836 5.75 0.202148 6.7832 0.157227C7.99609 0.112305 9.56087 0.0898438 11.4775 0.0898438ZM11.4775 1.57227C9.486 1.57227 7.86133 1.59473 6.60352 1.63965C5.79492 1.6696 5.04622 1.81185 4.35742 2.06641C3.2793 2.51562 2.51562 3.2793 2.06641 4.35742C1.81185 5.04622 1.6696 5.79492 1.63965 6.60352C1.59473 7.86133 1.57227 9.486 1.57227 11.4775C1.57227 13.4691 1.59473 15.0937 1.63965 16.3516C1.6696 17.1602 1.81185 17.9089 2.06641 18.5977C2.51562 19.6758 3.2793 20.4395 4.35742 20.8887C5.04622 21.1432 5.79492 21.2855 6.60352 21.3154C7.86133 21.3603 9.486 21.3828 11.4775 21.3828C13.4691 21.3828 15.0938 21.3603 16.3516 21.3154C17.1602 21.2855 17.9089 21.1432 18.5977 20.8887C19.6758 20.4395 20.4395 19.6758 20.8887 18.5977C21.1432 17.9089 21.2855 17.1602 21.3154 16.3516C21.3604 15.0937 21.3828 13.4691 21.3828 11.4775C21.3828 9.486 21.3604 7.86133 21.3154 6.60352C21.2855 5.79492 21.1432 5.04622 20.8887 4.35742C20.4395 3.2793 19.6758 2.51562 18.5977 2.06641C17.9089 1.81185 17.1602 1.6696 16.3516 1.63965C15.0938 1.59473 13.4691 1.57227 11.4775 1.57227ZM11.4775 16.0371C12.7354 16.0371 13.8097 15.5916 14.7007 14.7007C15.5916 13.8097 16.0371 12.7354 16.0371 11.4775C16.0371 10.2197 15.5916 9.14534 14.7007 8.25439C13.8097 7.36344 12.7354 6.91797 11.4775 6.91797C10.2197 6.91797 9.14534 7.36344 8.25439 8.25439C7.36344 9.14534 6.91797 10.2197 6.91797 11.4775C6.91797 12.7354 7.36344 13.8097 8.25439 14.7007C9.14534 15.5916 10.2197 16.0371 11.4775 16.0371ZM11.4775 5.63769C13.0947 5.63769 14.4723 6.20671 15.6104 7.34473C16.7484 8.48275 17.3174 9.86035 17.3174 11.4775C17.3174 13.0947 16.7484 14.4723 15.6104 15.6104C14.4723 16.7484 13.0947 17.3174 11.4775 17.3174C9.86035 17.3174 8.48275 16.7484 7.34473 15.6104C6.20671 14.4723 5.6377 13.0947 5.6377 11.4775C5.6377 9.86035 6.20671 8.48275 7.34473 7.34473C8.48275 6.20671 9.86035 5.63769 11.4775 5.63769ZM18.9346 5.41309C18.9346 5.78743 18.7998 6.10563 18.5303 6.36768C18.2607 6.62972 17.9313 6.76074 17.542 6.76074C17.1676 6.76074 16.8494 6.62972 16.5874 6.36768C16.3254 6.10563 16.1943 5.78743 16.1943 5.41309C16.1943 5.02376 16.3254 4.69434 16.5874 4.4248C16.8494 4.15527 17.1676 4.02051 17.542 4.02051C17.9163 4.02051 18.242 4.15902 18.519 4.43603C18.7961 4.71305 18.9346 5.03874 18.9346 5.41309Z" fill="#666666"/>
             </svg>
             <span class="visually-hidden">Мы в Инстаграмме</span>
           </a></li>
+          <li class="social__item"><a href="" class="social__link social__link--inst">
+            <svg width="28" height="33" viewBox="0 0 28 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21 2.75H17.5C15.9529 2.75 14.4692 3.46024 13.3752 4.72447C12.2813 5.98871 11.6667 7.70337 11.6667 9.49127V13.536H8.16669V18.929H11.6667V29.7151H16.3334V18.929H19.8334L21 13.536H16.3334V9.49127C16.3334 9.13369 16.4563 8.79076 16.6751 8.53791C16.8939 8.28506 17.1906 8.14302 17.5 8.14302H21V2.75Z" stroke="#666666" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="visually-hidden">Мы в Фейсбуке</span>
+          </a></li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
         <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy
-          <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="copyright__icon" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#666666"/>
           </svg>
         </a>
       </div>
     </div>
   </footer>
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
 </body>
 </html>

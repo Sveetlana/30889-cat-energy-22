@@ -48,10 +48,12 @@
     @media (min-width: $tablet-width) {
       border-bottom: 2px solid $basic-green;
     }
+  }
+}
 
-    @media (min-width: $tablet-width) {
-      border-bottom-color: #ffffff;
-    }
+.main-nav--index .main-nav__item--current {
+  @media (min-width: $tablet-width) {
+    border-bottom-color: #ffffff;
   }
 }
 
@@ -59,7 +61,9 @@
   display: block;
   text-decoration: none;
   color: #000000;
+}
 
+.main-nav--index .main-nav__link {
   @media (min-width: $desktop-width) {
     color: #ffffff;
   }
