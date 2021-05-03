@@ -6,6 +6,7 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
+    grid-gap: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -41,7 +42,7 @@
 
   @media (min-width: $tablet-width) {
     min-height: 512px;
-    width: 324px;
+    //width: 324px;
   }
 
   @media (min-width: $desktop-width) {

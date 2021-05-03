@@ -1,6 +1,7 @@
 .page-header__top {
   display: flex;
   flex-direction: column;
+  border-bottom: 1px solid $special_light-grey;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -8,6 +9,7 @@
     width: 708px;
     justify-content: space-between;
     align-items: center;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {

@@ -1,8 +1,16 @@
 .product-card {
-  background-color: $basic-grey;
+  background-color: #ffffff;
+  //overflow: hidden;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    //background-color: $basic-grey;
+    background: linear-gradient(to bottom, #ffffff 80px, $basic-grey 80px);
+    padding: 0 40px 40px 40px;
+  }
 
   &--show-more {
-    background-color: #ffffff;
+    background: #ffffff;
   }
 }
 
