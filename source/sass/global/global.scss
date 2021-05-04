@@ -1,3 +1,19 @@
 .visually-hidden {
   display: none;
 }
+
+.br-mobile {
+  display: inline;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.br-not-mobile {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+}
