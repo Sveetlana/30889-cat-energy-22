@@ -11,6 +11,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
+    grid-gap: 80px;
   }
 }
 
@@ -29,7 +30,13 @@
 
 .catalog__title {
   font-size: 36px;
+  line-height: 36px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .catalog__subtitle {
@@ -37,16 +44,24 @@
   font-weight: 400;
 }
 
-.catalog__item {
+/* .catalog__item {
   min-height: 209px;
 
   @media (min-width: $tablet-width) {
     min-height: 512px;
-    //width: 324px;
+    width: 324px;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 511px;
     width: 245px;
+  }
+} */
+
+.catalog__item {
+  border-top: 1px solid $special_grey;
+
+  &:last-of-type {
+    border-bottom: 1px solid $special_grey;
   }
 }
