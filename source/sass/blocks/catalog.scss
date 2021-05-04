@@ -45,21 +45,12 @@
 .catalog__subtitle {
   font-size: 24px;
   font-weight: 400;
-}
-
-/* .catalog__item {
-  min-height: 209px;
 
   @media (min-width: $tablet-width) {
-    min-height: 512px;
-    width: 324px;
+    font-size: 36px;
+    line-height: 36px;
   }
-
-  @media (min-width: $desktop-width) {
-    min-height: 511px;
-    width: 245px;
-  }
-} */
+}
 
 .catalog__item {
   border-top: 1px solid $special_light-grey;

@@ -1,5 +1,17 @@
 .product-promo {
   background-color: $basic_green;
+  height: 289px;
+  margin: 39px 0;
+
+  @media (min-width: $tablet-width) {
+    height: 200px;
+    margin: 69px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: auto;
+    margin: 0;
+  }
 }
 
 .product-promo__details {

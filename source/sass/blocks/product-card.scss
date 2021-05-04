@@ -123,6 +123,11 @@
     font-size: 16px;
     line-height: 18px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -2px;
+    margin-right: -2px;
+  }
 }
 
 .product-card__button {
