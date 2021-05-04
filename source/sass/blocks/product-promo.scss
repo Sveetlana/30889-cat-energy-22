@@ -1,16 +1,51 @@
 .product-promo {
-  background-color: $basic_green;
+  //background-color: $basic_green;
   height: 289px;
   margin: 39px 0;
+  background-image: url("../img/gift-photo-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     height: 200px;
     margin: 69px 0;
+    background-image: url("../img/gift-photo-tablet.png");
   }
 
   @media (min-width: $desktop-width) {
     height: auto;
     margin: 0;
+    background-image: url("../img/gift-photo-desktop.png");
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 78px;
+    height: 80px;
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 65px;
+    left: calc(50% - 39px);
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 83px;
+      left: 89px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: calc(50% - 40px);
+    }
   }
 }
 
@@ -20,4 +55,11 @@
   line-height: 20px;
   font-weight: 400;
   color: #ffffff;
+  text-align: center;
+  margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    text-align: left;
+    margin: 0 115px 0 0;
+  }
 }
