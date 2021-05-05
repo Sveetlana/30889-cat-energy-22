@@ -32,7 +32,7 @@
   justify-content: center;
   height: 65px;
 
-  border-bottom: 1px solid $special_light-grey;
+  border-top: 1px solid $special_light-grey;
 
   @media (min-width: $tablet-width) {
     border: none;
@@ -124,9 +124,9 @@
     display: none;
   }
 
-  .main-nav__item:first-child {
+  /* .main-nav__item:first-child {
     border-top: 1px solid $special_light-grey;
-  }
+  } */
 }
 
 .main-nav--nojs .main-nav__toggle {
