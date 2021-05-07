@@ -83,19 +83,19 @@
 }
 
 .steps__item--consist::before {
-  background-image: url("../../img/icon-leafe.svg");
+  background-image: url("../img/icon-leafe.svg");
 }
 
 .steps__item--form::before {
-  background-image: url("../../img/icon-powder.svg");
+  background-image: url("../img/icon-powder.svg");
 }
 
 .steps__item--change::before {
-  background-image: url("../../img/icon-fork.svg");
+  background-image: url("../img/icon-fork.svg");
 }
 
 .steps__item--time::before {
-  background-image: url("../../img/icon-clock.svg");
+  background-image: url("../img/icon-clock.svg");
 }
 
 @media (min-width: $tablet-width) {

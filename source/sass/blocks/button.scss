@@ -8,6 +8,14 @@
   background-color: $basic_green;
   text-align: center;
   display: block;
+
+  &:hover {
+    background-color: $basic_green-2;
+  }
+
+  &:active {
+    color: rgba($color: #ffffff, $alpha: 0.3);
+  }
 }
 
 .button--grey {

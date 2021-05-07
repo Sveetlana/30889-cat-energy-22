@@ -52,7 +52,7 @@
 }
 
 .main-nav--index .main-nav__item--current {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     border-bottom-color: #ffffff;
   }
 }
@@ -61,6 +61,24 @@
   display: block;
   text-decoration: none;
   color: #000000;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__item--current .main-nav__link {
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 1;
+  }
 }
 
 .main-nav--index .main-nav__link {
