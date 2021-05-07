@@ -48,7 +48,7 @@
 
 .programs__item--lose .programs__title::before {
   content: "";
-  background-image: url("../../img/icon-cat-slim.svg");
+  background-image: url("../img/icon-cat-slim.svg");
   background-size: cover;
   width: 50px;
   height: 53px;
@@ -75,7 +75,7 @@
 
 .programs__item--gain .programs__title::before {
   content: "";
-  background-image: url("../../img/icon-cat-muscle.svg");
+  background-image: url("../img/icon-cat-muscle.svg");
   background-size: cover;
   width: 67px;
   height: 50px;
@@ -126,7 +126,7 @@
 
   &::after {
     content: "";
-    background-image: url("../../img/icon-arrow-right.svg");
+    background-image: url("../img/icon-arrow-right.svg");
     width: 24px;
     height: 12px;
     display: inline-block;
@@ -137,6 +137,18 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  &:active {
+    //color: #b3b3b3;
+    opacity: 0.3;
+  }
+}
+
+.programs__link:hover {
+  &::after {
+    background-image: url("../img/icon-arrow-right-long.svg");
+    width: 32px;
   }
 }
 

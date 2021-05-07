@@ -56,9 +56,9 @@
             <p class="hero__slogan">Занялся собой? Займись котом!</p>
           </div>
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/index-can.png">
-            <source media="(min-width: 768px)" srcset="img/index-can-tablet.png">
-            <img class="hero__img" src="img/index-can-mobile.png" alt="cat energy">
+            <source media="(min-width: 1440px)" srcset="img/index-can.png 1x, img/index-can@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet.png 1x, img/index-can-tablet@2x.png 2x">
+            <img class="hero__img" src="img/index-can-mobile.png" srcset="img/index-can-mobile.png 2x" alt="cat energy">
           </picture>
           <a href="form.html" class="hero__button button">Подобрать программу</a>
         </div>
@@ -129,10 +129,10 @@
           <div class="example__photo">
             <div class="example__photo-wrapper">
               <div class="example__before">
-                <img src="img/before-mobile 1.png" alt="фото до" width="311" height="232">
+                <img src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" alt="фото до" width="311" height="232">
               </div>
               <div class="example__after">
-                <img src="img/after-mobile 1.png" alt="фото после" width="251" height="240">
+                <img src="img/after-mobile.png" srcset="img/after-mobile@2x.png 2x" alt="фото после" width="251" height="240">
               </div>
               <div class="controls">
                 <button class="controls__button controls__button--before">Было</button>
@@ -148,10 +148,12 @@
       <div class="map__container">
         <div class="map__text">
           <p class="map__title">Приглашаем<br>к сотрудничеству<br>дилеров!</p>
-          <p class="map__address">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</p>
+          <p class="map__address">ул. Большая<br>Конюшенная, д. 19/8<br><br class="br-not-mobile">Санкт-Петербург</p>
         </div>
       </div>
-      <div class="map__location"></div>
+      <div class="map__location">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Afffcda3fd5ea90e254b3828f34175e22abd1b19b3d1539e1065ad215f92c420d&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+      </div>
     </section>
   </main>
   <footer class="page-footer">
