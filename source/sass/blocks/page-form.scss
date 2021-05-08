@@ -8,7 +8,7 @@
   font-size: 24px;
   line-height: 26px;
   margin: 0;
-  padding: 25px 0;
+  padding: 25px 1em 25px 0;
   display: inline-block;
   background-color: #ffffff;
   position: relative;
@@ -17,7 +17,14 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    padding: 70px 0;
+    padding: 70px 1em;
+    left: -1em;
+  }
+
+  &--contacts {
+    @media (max-width: $mobile-width-only) {
+      width: 185px;
+    }
   }
 }
 
@@ -114,6 +121,15 @@
     border-radius: 0;
     outline: none;
     padding: 0 calc(1em - 1px);
+  }
+}
+
+.page-form__input--email,
+.page-form__input--phone {
+  padding-right: 2.7em;
+
+  &:focus {
+    padding-right: calc(2.7em - 1px);
   }
 }
 
@@ -254,6 +270,13 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  position: relative;
+}
+
+.page-form__icon-mail,
+.page-form__icon-phone {
+  position: absolute;
+  right: 1em;
 }
 
 .page-form__submit {
@@ -275,6 +298,7 @@
 
 .page-form__delimiter {
   position: relative;
+  overflow: hidden;
 }
 
 .page-form__delimiter::before {
@@ -285,9 +309,11 @@
   position: absolute;
   z-index: 1;
   top: 40px;
+  left: 33%;
 
   @media (min-width: $tablet-width) {
     top: 90px;
+    left: 0;
   }
 }
 

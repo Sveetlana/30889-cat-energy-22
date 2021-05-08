@@ -129,10 +129,16 @@
           <div class="example__photo">
             <div class="example__photo-wrapper">
               <div class="example__before">
-                <img src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" alt="фото до" width="311" height="232">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/cat-fat.png 1x, img/cat-fat@2x.png 2x">
+                  <img src="img/cat-fat-mobile.png" srcset="img/cat-fat-mobile@2x.png 2x" alt="фото до" width="311" height="232">
+                </picture>
               </div>
               <div class="example__after">
-                <img src="img/after-mobile.png" srcset="img/after-mobile@2x.png 2x" alt="фото после" width="251" height="240">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/cat-skinny.png 1x, img/cat-skinny@2x.png 2x">
+                  <img src="img/cat-skinny-mobile.png" srcset="img/cat-skinny-mobile@2x.png 2x" alt="фото после" width="251" height="240">
+                </picture>
               </div>
               <div class="controls">
                 <button class="controls__button controls__button--before">Было</button>
