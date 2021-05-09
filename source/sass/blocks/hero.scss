@@ -25,6 +25,10 @@
       background-image: url("../img/bg-mobile@2x.png");
       background-size: 563px auto;
     }
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
   &::after {
@@ -36,6 +40,10 @@
     background: rgba(104, 183, 56, 0.85);
     position: absolute;
     top: 0;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
