@@ -53,6 +53,10 @@
 
 .map {
   position: relative;
+
+  &--catalog {
+    background-color: $basic_grey;
+  }
 }
 
 .map__text {
