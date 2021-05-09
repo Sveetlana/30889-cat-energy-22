@@ -9,16 +9,31 @@
   flex-direction: column-reverse;
   position: relative;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.png");
+    background-size: 280px auto;
+  }
+
   @media (min-width: $tablet-width) {
     height: 200px;
     margin: 69px 0;
     background-image: url("../img/gift-photo-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.png");
+      background-size: 708px auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
     height: auto;
     margin: 0;
     background-image: url("../img/gift-photo-desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.png");
+      background-size: 245px auto;
+    }
   }
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {

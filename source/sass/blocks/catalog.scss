@@ -43,12 +43,21 @@
 }
 
 .catalog__subtitle {
-  font-size: 24px;
   font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  margin: 0;
+  padding: 25px 1em 25px 0;
+  display: inline-block;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 2;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    padding: 70px 1em;
+    left: -1em;
   }
 }
 
@@ -65,5 +74,26 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+  }
+}
+
+.catalog__delimiter {
+  position: relative;
+  overflow: hidden;
+}
+
+.catalog__delimiter::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: $basic_green;
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  left: 33%;
+
+  @media (min-width: $tablet-width) {
+    top: 90px;
+    left: 0;
   }
 }
