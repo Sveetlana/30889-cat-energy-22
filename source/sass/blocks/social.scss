@@ -8,5 +8,26 @@
 }
 
 .social__item {
-  margin: 0 0.5em;
+  margin: 0 0.88em;
+}
+
+.social__icon {
+  fill: $special_grey2;
+
+  &:hover {
+    fill: $basic_green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--fb {
+    fill: none;
+    stroke: $special_grey2;
+
+    &:hover {
+      stroke: $basic_green;
+    }
+  }
 }

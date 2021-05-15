@@ -10,6 +10,14 @@
   align-items: center;
 }
 
+.copyright__link:hover .copyright__icon {
+  fill: $basic_green;
+}
+
+.copyright__link:active {
+  opacity: 0.3;
+}
+
 .copyright {
   position: relative;
 }
@@ -17,6 +25,7 @@
 .copyright__icon {
   position: absolute;
   right: 0;
+  fill: $special_grey2;
 
   @media (min-width: $tablet-width) {
     position: relative;
