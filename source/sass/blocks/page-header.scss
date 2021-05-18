@@ -24,7 +24,7 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 175px;
+    width: 210px;
     margin: 0;
   }
 
@@ -49,7 +49,7 @@
   .page-header--index::before {
     content: "";
     background-color: #3e3e42;
-    background-image: url("../img/bg-desktop.png");
+    background-image: url("../img/bg-desktop.webp");
     background-repeat: no-repeat;
     display: block;
     width: 100%;
@@ -59,7 +59,7 @@
     z-index: 1;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/bg-desktop@2x.png");
+      background-image: url("../img/bg-desktop@2x.webp");
       background-size: 1044px auto;
     }
   }
