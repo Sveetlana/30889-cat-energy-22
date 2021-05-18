@@ -94,6 +94,10 @@
   }
 }
 
+.page-form__row:hover > .page-form__checkbox + .page-form__label::before {
+  border-color: #bababa;
+}
+
 .page-form__checkbox:checked + .page-form__label::before {
   background-image: url("../img/icon-check.svg");
   background-position: center center;
@@ -121,6 +125,10 @@
     border-radius: 0;
     outline: none;
     padding: 0 calc(1em - 1px);
+  }
+
+  &:invalid {
+    border-color: $status_error;
   }
 }
 
@@ -277,6 +285,31 @@
 .page-form__icon-phone {
   position: absolute;
   right: 1em;
+  //$special_dark-grey-2;
+}
+
+.page-form__icon-mail {
+  stroke: $special_dark-grey-2;
+}
+
+.page-form__icon-phone {
+  fill: $special_dark-grey-2;
+}
+
+.page-form__input--email:focus + .page-form__icon-mail {
+  stroke: $basic_green;
+}
+
+.page-form__input--phone:focus + .page-form__icon-phone {
+  fill: $basic_green;
+}
+
+.page-form__input--email:invalid + .page-form__icon-mail {
+  stroke: $status_error;
+}
+
+.page-form__input--phone:invalid + .page-form__icon-phone {
+  fill: $status_error;
 }
 
 .page-form__submit {
@@ -334,6 +367,10 @@
   background-color: #ffffff;
   border: 1px solid $special_grey;
   border-radius: 50%;
+}
+
+.page-form__row:hover > .page-form__radio + .page-form__label::before {
+  border-color: #bababa;
 }
 
 .page-form__radio:checked + .page-form__label::after {
