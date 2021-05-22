@@ -55,6 +55,7 @@
   position: relative;
   box-sizing: border-box;
   padding-left: 80px;
+  min-height: 60px;
 
   @media (min-width: $tablet-width) {
     width: 250px;
