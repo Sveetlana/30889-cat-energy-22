@@ -46,9 +46,9 @@ exports.html = html;
 // Scripts
 
 const scripts = () => {
-  return gulp.src("source/js/scripts.js")
+  return gulp.src("source/js/app.js")
     .pipe(terser())
-    .pipe(rename("script.min.js"))
+    .pipe(rename("app.min.js"))
     .pipe(gulp.dest("build/js"))
     .pipe(sync.stream())
 }
@@ -117,7 +117,7 @@ const sprite = () => {
       inlineSvg: true
     }))
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("build/img/icons"));
 }
 
 exports.sprite = sprite;
@@ -142,8 +142,8 @@ exports.server = server;
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  //gulp.watch("source/js/script.js", gulp.series(scripts));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/js/script.js", gulp.series(scripts));
+  gulp.watch("source/*.html", gulp.series(html, reload));
 }
 
 
@@ -156,7 +156,7 @@ const build = gulp.series(
   gulp.parallel(
     styles,
     html,
-    //scripts
+    scripts,
     sprite,
     createWebp
   )
@@ -173,7 +173,7 @@ exports.default = gulp.series(
   gulp.parallel(
     styles,
     html,
-    //scripts,
+    scripts,
     sprite,
     createWebp
   ),
@@ -181,3 +181,10 @@ exports.default = gulp.series(
     server,
     watcher
   ));
+
+// Reload
+
+const reload = (done) => {
+  sync.reload();
+  done();
+}

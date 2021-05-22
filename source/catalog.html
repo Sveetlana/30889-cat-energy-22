@@ -20,7 +20,7 @@
             <img class="logo__icon" src="img/logo-mobile.svg" alt="Cat Energy" width="34" height="38">
           </picture>
           <svg class="logo__text" width="128" height="24">
-            <use xlink:href="img/sprite.svg#logo-text"></use>
+            <use xlink:href="img/icons/sprite.svg#logo-text"></use>
           </svg>
         </a>
       </div>
@@ -329,7 +329,7 @@
     <div class="page-footer__container">
       <a class="page-footer__logo logo" href="">
         <svg width="128" height="24">
-          <use xlink:href="img/sprite.svg#logo-text"><use>
+          <use xlink:href="img/icons/sprite.svg#logo-text"><use>
         </svg>
       </a>
       <div class="page-footer__social social">
@@ -337,7 +337,7 @@
           <li class="social__item">
             <a href="" class="social__link">
               <svg class="social__icon social__icon--vk" width="30" height="22">
-                <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
+                <use xlink:href="img/icons/sprite.svg#icon-vkontakte"></use>
               </svg>
               <span class="visually-hidden">Мы ВКонтакте</span>
             </a>
@@ -345,7 +345,7 @@
           <li class="social__item">
             <a href="" class="social__link">
               <svg class="social__icon social__icon--inst" width="23" height="23">
-                <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                <use xlink:href="img/icons/sprite.svg#icon-instagram"></use>
               </svg>
               <span class="visually-hidden">Мы в Инстаграмме</span>
             </a>
@@ -353,7 +353,7 @@
           <li class="social__item">
             <a href="" class="social__link">
               <svg class="social__icon social__icon--fb" width="28" height="33">
-                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                <use xlink:href="img/icons/sprite.svg#icon-facebook"></use>
               </svg>
               <span class="visually-hidden">Мы в Фейсбуке</span>
             </a>
@@ -363,27 +363,12 @@
       <div class="page-footer__copyright copyright">
         <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy
           <svg class="copyright__icon" width="27" height="34">
-            <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+            <use xlink:href="img/icons/sprite.svg#icon-htmlacademy"></use>
           </svg>
         </a>
       </div>
     </div>
   </footer>
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-  </script>
+  <script src="js/app.min.js"></script>
   </body>
 </html>
