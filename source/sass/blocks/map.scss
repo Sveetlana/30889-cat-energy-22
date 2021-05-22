@@ -43,13 +43,11 @@
   }
 }
 
-/* .map__wrapper {
-  background-color: $basic-grey;
-
-  @media (min-width: $desktop-width) {
-    background-color: #ffffff;
-  }
-} */
+.map__iframe {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
 
 .map {
   position: relative;
