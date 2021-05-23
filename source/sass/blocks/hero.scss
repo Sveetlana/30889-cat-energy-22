@@ -61,6 +61,7 @@
     text-align: left;
     color: #000000;
     width: 420px;
+    padding: 54px 0 42px 0;
   }
 }
 
@@ -77,6 +78,7 @@
     line-height: 20px;
     text-align: left;
     color: #000000;
+    margin-bottom: 19px;
   }
 }
 
@@ -85,7 +87,7 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 570px;
+    width: 534px;
     min-height: 850px;
     position: relative;
   }
@@ -99,10 +101,11 @@
 .hero__button {
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    padding: 17px;
+    padding: 18px 22px;
     display: inline-block;
     z-index: 2;
     position: relative;
+    top: 29px;
   }
 }
 
