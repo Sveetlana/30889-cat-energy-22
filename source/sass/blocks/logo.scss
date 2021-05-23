@@ -24,3 +24,10 @@
     height: 60px;
   }
 }
+
+.logo__text {
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 22px;
+  }
+}

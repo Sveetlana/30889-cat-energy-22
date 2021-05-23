@@ -44,6 +44,10 @@
     }
   }
 
+  @media (min-width: $desktop-width) {
+    margin-right: 1.7em;
+  }
+
   &--current {
     @media (min-width: $tablet-width) {
       border-bottom: 2px solid $basic-green;

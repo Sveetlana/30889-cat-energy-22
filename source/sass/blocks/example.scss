@@ -58,6 +58,10 @@
     line-height: 60px;
     padding: 43px 0 64px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 68px 0 77px;
+  }
 }
 
 .example__description {
@@ -77,6 +81,8 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 70px;
+    padding-right: 0;
+    margin-bottom: 70px;
   }
 }
 
@@ -176,6 +182,10 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: 162px 162px;
     grid-gap: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
   }
 }
 
