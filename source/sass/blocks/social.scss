@@ -9,6 +9,10 @@
 
 .social__item {
   margin: 0 1.1em;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0.75em;
+  }
 }
 
 .social__icon {
@@ -29,5 +33,20 @@
     &:hover {
       stroke: $basic_green;
     }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social__icon--vk {
+    width: 30px;
+    height: 22px;
+  }
+  .social__icon--inst {
+    width: 23px;
+    height: 23px;
+  }
+  .social__icon--fb {
+    width: 28px;
+    height: 33px;
   }
 }
