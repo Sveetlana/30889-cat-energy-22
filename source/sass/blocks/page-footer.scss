@@ -55,4 +55,9 @@
     width: 280px;
     margin: 0 auto;
   }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    right: 24px;
+  }
 }
