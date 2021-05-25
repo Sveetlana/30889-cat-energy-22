@@ -35,6 +35,8 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+  margin: 0;
+  padding: 27px 0 40px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -47,7 +49,7 @@
   font-size: 24px;
   line-height: 26px;
   margin: 0;
-  padding: 25px 1em 25px 0;
+  padding: 25px 1em 34px 0;
   display: inline-block;
   background-color: #ffffff;
   position: relative;
