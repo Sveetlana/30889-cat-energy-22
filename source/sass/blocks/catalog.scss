@@ -8,7 +8,7 @@
     width: 708px;
     margin: 0 auto;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 60px;
+    grid-gap: 70px 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -41,6 +41,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    padding: 55px 0 91px;
   }
 }
 
@@ -58,8 +59,8 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    padding: 70px 1em;
-    left: -1em;
+    padding: 70px 1em 79px;
+    //left: -1em;
   }
 }
 

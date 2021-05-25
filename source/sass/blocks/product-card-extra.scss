@@ -59,11 +59,11 @@
 }
 
 .product-card-extra__weight {
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     text-align: right;
   }
 
-  @media (max-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     text-align: left;
   }
 }

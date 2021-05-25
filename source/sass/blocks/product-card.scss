@@ -13,7 +13,7 @@
 
   @media (min-width: $tablet-width) {
     //background-color: $basic-grey;
-    background: linear-gradient(to bottom, #ffffff 80px, $basic-grey 80px);
+    background: linear-gradient(to bottom, #ffffff 73px, $basic-grey 73px);
     padding: 0 38px 38px 38px;
     width: auto;
 
@@ -33,9 +33,10 @@
 
   @media (min-width: $tablet-width) {
     border: 2px solid $basic_grey;
-    margin-top: 80px;
-    padding-top: 50px;
-    height: calc(100% - 80px);
+    margin-top: 73px;
+    //padding-top: 50px;
+    padding: 50px 38px 36px 38px;
+    height: calc(100% - 73px);
   }
 }
 
@@ -53,7 +54,7 @@
 
 .product-card__description {
   @media (min-width: $tablet-width) {
-    margin: 38px 0;
+    margin: 33px 0 30px;
   }
 }
 
@@ -62,6 +63,7 @@
 
   @media (min-width: $tablet-width) {
     text-align: center;
+    margin-bottom: 11px;
   }
 }
 
@@ -112,7 +114,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 22px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 }
 

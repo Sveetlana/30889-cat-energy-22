@@ -43,6 +43,7 @@
   }
 }
 
+.map--catalog .map__container,
 .map--form .map__container {
   @media (min-width: $tablet-width) {
     width: 630px;
